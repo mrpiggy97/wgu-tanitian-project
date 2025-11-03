@@ -1,10 +1,11 @@
 import './App.css'
+import { Routes, Route } from 'react-router'
 
 function App() {
 
   return (
-    <div>
-      <nav>
+    <div id='app'>
+      <nav id='navbar'>
         <a href="">Home</a>
         <a href="">Activities</a>
         <a href="">Booking</a>
@@ -12,9 +13,11 @@ function App() {
         <a href="">Important Information</a>
       </nav>
       <div id='views'>
-
+        <Routes>
+          <Route path='/' />
+        </Routes>
       </div>
-      <footer>
+      <footer id='footer'>
         <small>Tanitian Island 2025</small>
       </footer>
     </div>
