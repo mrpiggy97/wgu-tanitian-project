@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router'
+import Home from './Home/Home'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       </nav>
       <div id='views'>
         <Routes>
-          <Route path='/' />
+          <Route path='/' element={<Home/>}/>
         </Routes>
       </div>
       <footer id='footer'>

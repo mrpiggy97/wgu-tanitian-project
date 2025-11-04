@@ -1,10 +1,11 @@
 div#app{
   display: grid;
-  min-height: 100vh;
-  min-width: 100vw;
+  color: navy;
+  min-height: 220vh;
+  min-width: 98vw;
   border: solid red 2px;
   grid-template-columns: 100%;
-  grid-template-rows: 20% 65% 15%;
+  grid-template-rows: 8% 84% 8%;
   grid-template-areas: "navbar"
                        "views"
                        "footer";
@@ -26,4 +27,14 @@ footer#footer{
   display: grid;
   grid-area: footer;
   border: solid black 2px;
+}
+
+h2{
+  border: solid green 2px;
+  border-radius: 5px;
+  background-color: rgb(243, 240, 240);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }

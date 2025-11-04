@@ -1,0 +1,86 @@
+div#home{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "intro"
+                         "links";
+}
+
+div#intro{
+    display: grid;
+    grid-area: intro;
+    align-items: baseline;
+    justify-items: center;
+    border: solid yellow 2px;
+}
+
+div#links{
+    display: grid;
+    grid-area: links;
+    grid-template-columns: 100%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "activities-transportation"
+                         "booking";
+    border: solid green 2px;
+}
+
+div#activities-transportation{
+    display: grid;
+    grid-area: activities-transportation;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+div#activities{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-areas: "boat-image"
+                         "activities-paragraph";
+}
+div#transportation{
+    display: grid;
+    align-items: baseline;
+    justify-items: center;
+}
+
+div#booking{
+    display: grid;
+    grid-area: booking;
+    border: solid brown 2px
+}
+
+p.welcome-message{
+    border: solid green 2px;
+    border-radius: 5px;
+    max-width: 35%;
+    background-color: rgb(243, 240, 240);
+}
+
+p.activities-presentation{
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    border: solid green 2px;
+    border-radius: 5px;
+    max-width: 50%;
+    background-color: rgb(243, 240, 240);
+}
+p.transportation{
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    border: solid green 2px;
+    border-radius: 5px;
+    max-width: 70%;
+    background-color: rgb(243, 240, 240);
+}
+
+img.generic-image{
+    display: grid;
+    justify-self: center;
+    max-height: 200px;
+    width: 50%;
+}
