@@ -1,6 +1,7 @@
 import './App.css'
 import { Routes, Route } from 'react-router'
 import Home from './Home/Home'
+import Booking from './Book/Book'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <div id='views'>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/booking' element={<Booking/>} />
         </Routes>
       </div>
       <footer id='footer'>

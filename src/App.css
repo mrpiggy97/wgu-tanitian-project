@@ -14,6 +14,10 @@ div#app{
 nav#navbar{
   display: grid;
   grid-area: navbar;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
   border: solid navy 2px;
 }
 
@@ -27,14 +31,4 @@ footer#footer{
   display: grid;
   grid-area: footer;
   border: solid black 2px;
-}
-
-h2{
-  border: solid green 2px;
-  border-radius: 5px;
-  background-color: rgb(243, 240, 240);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }

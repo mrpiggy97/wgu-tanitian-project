@@ -9,7 +9,7 @@ export default function Home() : JSX.Element{
     return(
         <div id="home">
             <div id="intro">
-                <h2>Welcome to Taniti Island</h2>
+                <h2 className="welcome-message">Welcome to Taniti Island</h2>
                 <p className="welcome-message">
                     Taniti is a small, tropical island in the Pacific. While the island has an
                     area of less than 500 square miles, the terrain is varied and includes both
