@@ -2,6 +2,7 @@ import './App.css'
 import { Routes, Route } from 'react-router'
 import Home from './Home/Home'
 import Booking from './Book/Book'
+import Activities from './Activities/Activities'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/booking' element={<Booking/>} />
+          <Route path='/activities' element={<Activities/>} />
         </Routes>
       </div>
       <footer id='footer'>
