@@ -1,0 +1,58 @@
+div#activities-page{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "title"
+                         "activities";
+}
+
+div#title{
+    display: grid;
+    grid-area: title;
+    align-items: center;
+    justify-items: center;
+}
+div#activities{
+    display: grid;
+    grid-area: activities;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: 100%;
+    justify-content: space-around;
+}
+
+div.activity{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 40% 50%;
+    grid-template-areas: "activity-title"
+                         "activity-image"
+                         "activity-message";
+    border: solid teal 2px;
+    border-radius: 5px;
+}
+
+div.activity-title{
+    display: grid;
+    grid-area: activity-title;
+    justify-items: center;
+}
+
+div.activity-image{
+    display: grid;
+    grid-area: activity-image;
+    justify-items: center;
+    align-items: center;
+}
+
+div.activity-message{
+    display: grid;
+    grid-area: activity-message;
+}
+
+img.activity-image{
+    display: grid;
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 50%;
+    max-height: 50%;
+}
