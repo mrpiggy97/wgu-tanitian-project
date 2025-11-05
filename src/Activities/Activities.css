@@ -12,7 +12,7 @@ div#title{
     align-items: center;
     justify-items: center;
 }
-div#activities{
+div#activities-section{
     display: grid;
     grid-area: activities;
     grid-template-columns: repeat(2, 45%);
@@ -23,12 +23,10 @@ div#activities{
 div.activity{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 40% 50%;
+    grid-template-rows: 10% 40% 30%;
     grid-template-areas: "activity-title"
                          "activity-image"
                          "activity-message";
-    border: solid teal 2px;
-    border-radius: 5px;
 }
 
 div.activity-title{
@@ -47,6 +45,9 @@ div.activity-image{
 div.activity-message{
     display: grid;
     grid-area: activity-message;
+    border: solid green 2px;
+    border-radius: 5px;
+    background-color: rgb(243, 240, 240);
 }
 
 img.activity-image{
