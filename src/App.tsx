@@ -4,6 +4,7 @@ import Home from './Home/Home'
 import Booking from './Book/Book'
 import Activities from './Activities/Activities'
 import Transportation from './Transportation/Transportation'
+import ImportantInformation from './ImportantInformation/ImportantInformation'
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/booking' element={<Booking/>} />
           <Route path='/activities' element={<Activities/>} />
-          <Route path="transportation" element={<Transportation/>} />
+          <Route path="/transportation" element={<Transportation/>} />
+          <Route path='/important-information' element={<ImportantInformation/>}/>
         </Routes>
       </div>
       <footer id='footer'>
