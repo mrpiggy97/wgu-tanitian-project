@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router'
 import Home from './Home/Home'
 import Booking from './Book/Book'
 import Activities from './Activities/Activities'
+import Transportation from './transportation/transportation'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/booking' element={<Booking/>} />
           <Route path='/activities' element={<Activities/>} />
+          <Route path="transportation" element={<Transportation/>} />
         </Routes>
       </div>
       <footer id='footer'>
