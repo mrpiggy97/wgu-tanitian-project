@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router'
 import Home from './Home/Home'
 import Booking from './Book/Book'
 import Activities from './Activities/Activities'
-import Transportation from './transportation/transportation'
+import Transportation from './Transportation/Transportation'
 
 function App() {
 

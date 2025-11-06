@@ -1,7 +1,7 @@
 import type { JSX } from "react"
 import tropicalAirplane from "../assets/airplane-tropical.jpg"
 import cruise from "../assets/cruise.jpg"
-import "./transportation.css"
+import "./Transportation.css"
 
 type transportProps = {
     Image: string,
