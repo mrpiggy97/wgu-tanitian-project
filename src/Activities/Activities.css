@@ -33,6 +33,7 @@ div.activity-title{
     display: grid;
     grid-area: activity-title;
     justify-items: center;
+    align-items: center;
 }
 
 div.activity-image{
@@ -61,4 +62,11 @@ img.activity-image{
 p.activity-message{
     padding-left: 25px;
     padding-right: 25px;
+}
+
+h2.activity-header{
+    border: solid green 2px;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
 }

@@ -13,7 +13,7 @@ function Activity(props : ActivityProp) : JSX.Element{
     return (
         <div className="activity">
             <div className="activity-title">
-                <h2>{props.Title}</h2>
+                <h2 className="activity-header">{props.Title}</h2>
             </div>
             <div className="activity-image">
                 <img src={props.Image} className="activity-image" alt="" />
@@ -42,7 +42,7 @@ export default function Activities() : JSX.Element{
     return (
         <div id="activities-page">
             <div id="title">
-                <h2>Activities</h2>
+                <h2 className="activity-header">Activities</h2>
             </div>
             <div id="activities-section">
                 {
