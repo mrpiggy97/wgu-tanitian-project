@@ -19,7 +19,7 @@ function Activity(props : ActivityProp) : JSX.Element{
                 <img src={props.Image} className="activity-image" alt="" />
             </div>
             <div className="activity-message">
-                <p>{props.Message}</p>
+                <p className="activity-message">{props.Message}</p>
             </div>
         </div>
     )

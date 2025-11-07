@@ -57,3 +57,8 @@ img.activity-image{
     min-height: 50%;
     max-height: 50%;
 }
+
+p.activity-message{
+    padding-left: 25px;
+    padding-right: 25px;
+}
