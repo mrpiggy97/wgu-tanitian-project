@@ -9,7 +9,7 @@ export default function Home() : JSX.Element{
     const navigator = useNavigate()
     const visitBookingPage = (event : React.MouseEvent) : void => {
         event.preventDefault()
-        navigator("/booking")
+        navigator("/wgu-tanitian-project/booking")
     }
     return(
         <div id="home">

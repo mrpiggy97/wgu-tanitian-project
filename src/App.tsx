@@ -17,20 +17,20 @@ function App() {
     <div id='app'>
       <nav id='navbar'>
         <div id='navigational-links'>
-          <a href="" className={path === "/" ? "active" : "none"} onClick={(e) => visitPage(e,"/")}>Home</a>
-          <a href=""  className={path === "/activities" ? "active" : "none"} onClick={(e) => visitPage(e,"/activities")}>Activities</a>
-          <a href="" className={path === "/booking" ? "active" : "none"} onClick={(e) => visitPage(e,"/booking")}>Booking</a>
-          <a href="" className={path === "/transportation" ? "active" : "none"} onClick={(e) => visitPage(e,"/transportation")}>Transportation</a>
-          <a href="" className={path === "/important-information" ? "active" : "none"} onClick={(e) => visitPage(e,"/important-information")}>Important Information</a>
+          <a href="" className={path === "/wgu-tanitian-project" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project")}>Home</a>
+          <a href=""  className={path === "/wgu-tanitian-project/activities" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project/activities")}>Activities</a>
+          <a href="" className={path === "/wgu-tanitian-project/booking" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project/booking")}>Booking</a>
+          <a href="" className={path === "/wgu-tanitian-project/transportation" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project/transportation")}>Transportation</a>
+          <a href="" className={path === "/wgu-tanitian-project/important-information" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project/important-information")}>Important Information</a>
         </div>
       </nav>
       <div id='views'>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/booking' element={<Booking/>} />
-          <Route path='/activities' element={<Activities/>} />
-          <Route path="/transportation" element={<Transportation/>} />
-          <Route path='/important-information' element={<ImportantInformation/>}/>
+          <Route path='/wgu-tanitian-project' element={<Home/>}/>
+          <Route path='/wgu-tanitian-project/booking' element={<Booking/>} />
+          <Route path='/wgu-tanitian-project/activities' element={<Activities/>} />
+          <Route path="/wgu-tanitian-project/transportation" element={<Transportation/>} />
+          <Route path='/wgu-tanitian-project/important-information' element={<ImportantInformation/>}/>
         </Routes>
       </div>
       <footer id='footer'>
