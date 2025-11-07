@@ -46,6 +46,8 @@ form.user-info{
     grid-template-rows: 100%;
     border: solid green 2px;
     border-radius: 5px;
+    background-color: rgb(243, 240, 240);
+
 }
 
 div.left-info{

@@ -29,7 +29,7 @@ function App() {
         </Routes>
       </div>
       <footer id='footer'>
-        <small>Tanitian Island 2025</small>
+        <small>Taniti Island 2025</small>
       </footer>
     </div>
   )
