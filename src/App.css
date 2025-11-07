@@ -1,9 +1,12 @@
+body{
+  margin: 0;
+}
+
 div#app{
   display: grid;
   color: navy;
   min-height: 220vh;
   min-width: 98vw;
-  border: solid red 2px;
   grid-template-columns: 100%;
   grid-template-rows: 8% 84% 8%;
   grid-template-areas: "navbar"
@@ -14,11 +17,18 @@ div#app{
 nav#navbar{
   display: grid;
   grid-area: navbar;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: 70%;
   grid-template-rows: 100%;
+  align-content: center;
+  justify-content: center;
+  border: solid navy 2px;
+}
+
+div#navigational-links{
+  display: grid;
+  grid-template-columns: repeat(5,20%);
   align-items: center;
   justify-items: center;
-  border: solid navy 2px;
 }
 
 div#views{
@@ -30,5 +40,13 @@ div#views{
 footer#footer{
   display: grid;
   grid-area: footer;
-  border: solid black 2px;
+  border: solid navy 2px;
+  align-items: center;
+  justify-items: center;
+}
+
+a.active{
+  border: solid green 2px;
+  border-radius: 5px;
+  padding: 10px;
 }

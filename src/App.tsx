@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route } from 'react-router'
+import { Routes, Route, useLocation } from 'react-router'
 import Home from './Home/Home'
 import Booking from './Book/Book'
 import Activities from './Activities/Activities'
@@ -7,15 +7,17 @@ import Transportation from './Transportation/Transportation'
 import ImportantInformation from './ImportantInformation/ImportantInformation'
 
 function App() {
-
+  const path = useLocation().pathname
   return (
     <div id='app'>
       <nav id='navbar'>
-        <a href="">Home</a>
-        <a href="">Activities</a>
-        <a href="">Booking</a>
-        <a href="">Transportation</a>
-        <a href="">Important Information</a>
+        <div id='navigational-links'>
+          <a href="/" className={path === "/" ? "active" : "none"}>Home</a>
+          <a href="/activities"  className={path === "/activities" ? "active" : "none"}>Activities</a>
+          <a href="/booking" className={path === "/booking" ? "active" : "none"}>Booking</a>
+          <a href="/transportation" className={path === "/transportation" ? "active" : "none"}>Transportation</a>
+          <a href="/important-information" className={path === "/important-information" ? "active" : "none"}>Important Information</a>
+        </div>
       </nav>
       <div id='views'>
         <Routes>
