@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/wgu-tanitian-project/', // Add base URL for GitHub Pages
   plugins: [
     react({
       babel: {
