@@ -37,7 +37,7 @@ export default function Transportation() : JSX.Element{
     return(
         <div id="transportation-page">
             <div id="transportation-header">
-                <h2>Book your way to Taniti Island</h2>
+                <h2 id="transportation-header">Book your way to Taniti Island</h2>
             </div>
             <div id="transportation-bookings">
                 {

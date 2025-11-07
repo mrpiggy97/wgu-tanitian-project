@@ -73,8 +73,9 @@ img.transportation-image{
 button.form-button{
     display: grid;
     align-self: self-end;
-    border: solid purple 2px;
+    border: solid green 2px;
     border-radius: 5px;
+    background-color: green;
 }
 
 input[type="datetime-local"]{
@@ -82,4 +83,12 @@ input[type="datetime-local"]{
     max-height: 80%;
     min-height: 80%;
     align-self: center;
+}
+
+h2#transportation-header{
+    border: solid green 2px;
+    border-radius: 5px;
+    background-color: rgb(243, 240, 240);
+    padding-left: 25px;
+    padding-right: 25px;
 }
