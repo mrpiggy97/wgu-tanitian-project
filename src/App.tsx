@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, useLocation } from 'react-router'
+import { Routes, Route, useLocation, useNavigate } from 'react-router'
 import Home from './Home/Home'
 import Booking from './Book/Book'
 import Activities from './Activities/Activities'
@@ -8,15 +8,20 @@ import ImportantInformation from './ImportantInformation/ImportantInformation'
 
 function App() {
   const path = useLocation().pathname
+  const navigator = useNavigate()
+  const visitPage = (event : React.MouseEvent,newPath : string) : void => {
+    event.preventDefault()
+    navigator(newPath)
+  }
   return (
     <div id='app'>
       <nav id='navbar'>
         <div id='navigational-links'>
-          <a href="/" className={path === "/" ? "active" : "none"}>Home</a>
-          <a href="/activities"  className={path === "/activities" ? "active" : "none"}>Activities</a>
-          <a href="/booking" className={path === "/booking" ? "active" : "none"}>Booking</a>
-          <a href="/transportation" className={path === "/transportation" ? "active" : "none"}>Transportation</a>
-          <a href="/important-information" className={path === "/important-information" ? "active" : "none"}>Important Information</a>
+          <a href="" className={path === "/" ? "active" : "none"} onClick={(e) => visitPage(e,"/")}>Home</a>
+          <a href=""  className={path === "/activities" ? "active" : "none"} onClick={(e) => visitPage(e,"/activities")}>Activities</a>
+          <a href="" className={path === "/booking" ? "active" : "none"} onClick={(e) => visitPage(e,"/booking")}>Booking</a>
+          <a href="" className={path === "/transportation" ? "active" : "none"} onClick={(e) => visitPage(e,"/transportation")}>Transportation</a>
+          <a href="" className={path === "/important-information" ? "active" : "none"} onClick={(e) => visitPage(e,"/important-information")}>Important Information</a>
         </div>
       </nav>
       <div id='views'>

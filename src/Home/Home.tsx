@@ -3,8 +3,14 @@ import "./Home.css"
 import taniti1 from "../assets/taniti1.jpg";
 import boatSailing from "../assets/boat-sailing.jpg"
 import airplane from "../assets/airplane.jpg"
+import { useNavigate } from "react-router";
 
 export default function Home() : JSX.Element{
+    const navigator = useNavigate()
+    const visitBookingPage = (event : React.MouseEvent) : void => {
+        event.preventDefault()
+        navigator("/booking")
+    }
     return(
         <div id="home">
             <div id="intro">
@@ -40,7 +46,7 @@ export default function Home() : JSX.Element{
                     </div>
                 </div>
                 <div id="booking">
-                    <a id="home-booking" href="/booking">Book</a>
+                    <a id="home-booking" href="" onClick={(e) => visitBookingPage(e)}>Book</a>
                 </div>
             </div>
         </div>
