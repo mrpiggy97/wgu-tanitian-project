@@ -41,7 +41,7 @@ export default function Home() : JSX.Element{
                     </div>
                 </div>
                 <div id="booking">
-                    <a>Book</a>
+                    <a id="home-booking" href="/booking">Book</a>
                 </div>
             </div>
         </div>

@@ -11,17 +11,15 @@ div#intro{
     grid-area: intro;
     align-items: baseline;
     justify-items: center;
-    border: solid yellow 2px;
 }
 
 div#links{
     display: grid;
     grid-area: links;
     grid-template-columns: 100%;
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 85% 15%;
     grid-template-areas: "activities-transportation"
                          "booking";
-    border: solid green 2px;
 }
 
 div#activities-transportation{
@@ -42,14 +40,17 @@ div#activities{
 }
 div#transportation{
     display: grid;
-    align-items: baseline;
     justify-items: center;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
 }
 
 div#booking{
     display: grid;
     grid-area: booking;
-    border: solid brown 2px
+    justify-items: center;
+    align-items: center;
+    font-size: x-large;
 }
 
 p.welcome-message{
@@ -67,6 +68,8 @@ p.activities-presentation{
     border-radius: 5px;
     max-width: 50%;
     background-color: rgb(243, 240, 240);
+    padding-right: 25px;
+    padding-left: 25px;
 }
 p.transportation{
     display: grid;
@@ -75,6 +78,8 @@ p.transportation{
     border: solid green 2px;
     border-radius: 5px;
     max-width: 70%;
+    padding-right: 25px;
+    padding-left: 25px;
     background-color: rgb(243, 240, 240);
 }
 
@@ -93,4 +98,15 @@ h2.welcome-message{
   padding-right: 100px;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+a#home-booking{
+    border: solid green 2px;
+    border-radius: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+a#home-booking:hover{
+    cursor: pointer;
 }
