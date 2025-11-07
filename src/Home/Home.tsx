@@ -3,7 +3,6 @@ import "./Home.css"
 import taniti1 from "../assets/taniti1.jpg";
 import boatSailing from "../assets/boat-sailing.jpg"
 import airplane from "../assets/airplane.jpg"
-//import { Link } from "react-router";
 
 export default function Home() : JSX.Element{
     return(
