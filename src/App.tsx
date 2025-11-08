@@ -17,7 +17,7 @@ function App() {
     <div id='app'>
       <nav id='navbar'>
         <div id='navigational-links'>
-          <a href="" className={path === "/wgu-tanitian-project" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project")}>Home</a>
+          <a href="" className={path === "/wgu-tanitian-project/" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project/")}>Home</a>
           <a href=""  className={path === "/wgu-tanitian-project/activities" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project/activities")}>Activities</a>
           <a href="" className={path === "/wgu-tanitian-project/booking" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project/booking")}>Booking</a>
           <a href="" className={path === "/wgu-tanitian-project/transportation" ? "active" : "none"} onClick={(e) => visitPage(e,"/wgu-tanitian-project/transportation")}>Transportation</a>
@@ -26,7 +26,7 @@ function App() {
       </nav>
       <div id='views'>
         <Routes>
-          <Route path='/wgu-tanitian-project' element={<Home/>}/>
+          <Route path='/wgu-tanitian-project/' element={<Home/>}/>
           <Route path='/wgu-tanitian-project/booking' element={<Booking/>} />
           <Route path='/wgu-tanitian-project/activities' element={<Activities/>} />
           <Route path="/wgu-tanitian-project/transportation" element={<Transportation/>} />
