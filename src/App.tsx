@@ -34,7 +34,10 @@ function App() {
         </Routes>
       </div>
       <footer id='footer'>
-        <small>Taniti Island 2025</small>
+        <small>
+          Taniti Island 2025. All pictures and other media presented in this website are credited
+          to <a href='https://www.pexels.com'>pexels.com</a>
+        </small>
       </footer>
     </div>
   )
