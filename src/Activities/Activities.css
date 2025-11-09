@@ -71,3 +71,7 @@ h2.activity-header{
     padding-right: 50px;
     background-color: rgb(243, 240, 240);
 }
+
+h2.activity-header:hover{
+    cursor: pointer;
+}
