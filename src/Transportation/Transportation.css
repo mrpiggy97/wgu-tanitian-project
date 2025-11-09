@@ -61,7 +61,7 @@ label.form-label{
 }
 div.right-info{
     display: grid;
-    grid-template-columns: 70%;
+    grid-template-columns: 80%;
     grid-template-rows: 10% 60% 20%;
 }
 
@@ -84,6 +84,7 @@ input[type="datetime-local"]{
     display: grid;
     max-height: 80%;
     min-height: 80%;
+    max-width: 100%;
     align-self: center;
 }
 
